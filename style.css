@@ -1,0 +1,127 @@
+ body {
+      background: linear-gradient(135deg, #ffe6f2, #d8c7ff, #c2ffe9);
+      font-family: "Poppins", sans-serif;
+      text-align: center;
+      color: #5a3e85;
+      padding: 40px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+
+    .caja-oraculo {
+      background: rgba(255, 255, 255, 0.7);
+      border-radius: 20px;
+      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+      padding: 40px;
+      max-width: 400px;
+      margin: 0 auto;
+      transition: transform 0.3s;
+    }
+
+    .caja-oraculo:hover {
+      transform: scale(1.03);
+    }
+
+    button {
+      margin-top: 20px;
+      background-color: #b583d1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 30px;
+      cursor: pointer;
+      font-size: 1.1em;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background-color: #9c6bb5;
+    }
+
+    #mensaje {
+      margin-top: 25px;
+      font-size: 1.3em;
+      font-style: italic;
+      color: #4b326f;
+      min-height: 60px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+
+    #mensaje.visible {
+      opacity: 1;
+    }
+
+    /* 🌸 Modal de bienvenida */
+    .modal {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background-color: rgba(0, 0, 0, 0.4);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 10;
+    }
+
+    .modal-content {
+      background: #fff9fb;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+      text-align: center;
+      color: #5a3e85;
+      max-width: 300px;
+      width: 90%;
+      animation: aparecer 0.6s ease;
+    }
+
+    @keyframes aparecer {
+      from { transform: scale(0.8); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    .modal-content input {
+      border: none;
+      border-radius: 10px;
+      padding: 10px;
+      margin-top: 10px;
+      width: 90%;
+      text-align: center;
+      outline: none;
+      font-size: 1em;
+    }
+
+    .modal-content button {
+      background-color: #b583d1;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin-top: 15px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .modal-content button:hover {
+      background-color: #9c6bb5;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px;
+      }
+      h1 {
+        font-size: 2em;
+      }
+      .caja-oraculo {
+        padding: 25px;
+      }
+      button {
+        width: 100%;
+        font-size: 1em;
+      }
+    }

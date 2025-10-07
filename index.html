@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Oráculo del Día ✨</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- 🌸 Modal de bienvenida -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <h2>🌻 Hola! Soy el Oráculo y quiero regalarte una afirmación para tu día🌻</h2>
+      <p>¿Cuál es tu nombre?</p>
+      <input type="text" id="nombre" placeholder="Escribí tu nombre...">
+      <button onclick="guardarNombre()">Aceptar</button>
+    </div>
+  </div>
+
+  <h1>🌿 Lo que necesitabas leer hoy 🌞</h1>
+
+  <div class="caja-oraculo">
+    <p id="saludo">Presiona el botón para recibir tu mensaje del universo 🌸</p>
+    <button onclick="mostrarMensaje()">Revelar mensaje ✨</button>
+    <div id="mensaje"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
