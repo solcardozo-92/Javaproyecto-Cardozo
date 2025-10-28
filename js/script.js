@@ -84,5 +84,12 @@ function mostrarMensaje() {
   localStorage.setItem("ultimoAcceso", hoy);
 }
 
-// Funcion al cargar la pagina 
-window.onload = iniciarOraculo;
+// 🌟 Al cargar la página, inicializa el oráculo y agrega los eventos
+window.onload = function() {
+  iniciarOraculo();
+
+  // Escuchar clic en los botones
+  document.getElementById("btnGuardar").addEventListener("click", guardarNombre);
+  document.getElementById("btnMensaje").addEventListener("click", mostrarMensaje);
+};
+
